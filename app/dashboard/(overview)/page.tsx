@@ -22,17 +22,6 @@ export default async function Page() {
         <Suspense fallback={<CardsSkeleton />}>
           <CardWrapper />
         </Suspense>
-
-        {/*
-        <Card title="Earned" value={totalFulfilledInvoices} type="earned" />
-        <Card
-          title="In Progress"
-          value={totalAwaitingInvoices}
-          type="awaiting"
-        />
-        <Card title="All Invoices" value={numberOfInvoices} type="invoices" />
-        <Card title="Total Sellers" value={numberOfSellers} type="sellers" />
-        */}
       </div>
       <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-4 lg:grid-cols-8">
         <Suspense fallback={<IncomeChartSkeleton />}>

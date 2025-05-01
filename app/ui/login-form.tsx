@@ -12,8 +12,10 @@ import { useFormState } from 'react-dom';
 import { authenticate } from '@/app/lib/actions';
 
 export default function LoginForm() {
+  const [_, dispatch] = useFormState(authenticate, undefined);
+
   return (
-    <form className="space-y-3">
+    <form action={dispatch} className="space-y-3">
       <div className="flex-1 rounded-lg bg-neutral-900 px-6 pb-4 pt-8">
         <h1 className={`${poppins.className} mb-3 text-3xl text-white`}>
           Please log in to continue.

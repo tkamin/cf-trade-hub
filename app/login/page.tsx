@@ -1,5 +1,5 @@
-import TradeHubLogo from '../ui/tradehub-logo';
-import LoginForm from '../ui/login-form';
+import TradeHubLogo from '@/app/ui/tradehub-logo';
+import LoginForm from '@/app/ui/login-form';
 
 export default function LoginPage() {
   return (
