@@ -1,3 +1,5 @@
+'use client';
+
 import { poppins } from '@/app/ui/fonts';
 import {
   UserIcon,
@@ -6,6 +8,8 @@ import {
 } from '@heroicons/react/24/outline';
 import { ArrowRightIcon } from '@heroicons/react/20/solid';
 import { Button } from './button';
+import { useFormState } from 'react-dom';
+import { authenticate } from '@/app/lib/actions';
 
 export default function LoginForm() {
   return (
